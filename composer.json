@@ -1,0 +1,45 @@
+{
+  "name": "allswap/statamic-crypto-validator",
+  "description": "Multi-chain cryptocurrency address validation for Statamic CMS forms and Antlers templates (Bitcoin, Ethereum, Solana, TON, TRON).",
+  "type": "statamic-addon",
+  "version": "1.0.0",
+  "keywords": [
+    "statamic",
+    "statamic-addon",
+    "crypto",
+    "bitcoin",
+    "ethereum",
+    "solana",
+    "allswap"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AllSwap Protocol",
+      "homepage": "https://allswap.io"
+    }
+  ],
+  "require": {
+    "php": "^8.1 || ^8.2 || ^8.3",
+    "statamic/cms": "^4.0 || ^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Allswap\\CryptoValidator\\": "src/"
+    }
+  },
+  "extra": {
+    "statamic": {
+      "name": "Crypto Address Validator",
+      "description": "Multi-chain crypto address validator for Statamic forms & Antlers templates.",
+      "developer": "AllSwap Protocol",
+      "developer_url": "https://allswap.io",
+      "documentation_url": "https://github.com/1138014573/statamic-crypto-validator"
+    },
+    "laravel": {
+      "providers": [
+        "Allswap\\CryptoValidator\\ServiceProvider"
+      ]
+    }
+  }
+}
